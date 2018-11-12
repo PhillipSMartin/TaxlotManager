@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A16B90A-6552-49FB-B2BB-714A9E458359}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GHVHugoLib</RootNamespace>
+    <AssemblyName>GHVHugoLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Gargoyle.snk</AssemblyOriginatorKeyFile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>Migrated rules for GHVHugoLib (3).ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>Migrated rules for GHVHugoLib (4).ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gargoyle.Utils.DBAccess">
+      <HintPath>S:\Lib\Gargoyle.Utils.DBAccess.dll\2.0.0.0\1.0.0.7\Gargoyle.Utils.DBAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="LoggingUtilitiesLib">
+      <HintPath>S:\Lib\LoggingUtilitiesLib.dll\1.0.0.0\1.0.0.2\LoggingUtilitiesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LumenWorks.Framework.IO">
+      <HintPath>S:\Lib\LumenWorks.Framework.IO.dll\3.0.0.0\3.0.0.1\LumenWorks.Framework.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="ReconciliationLib, Version=1.2.4.1, Culture=neutral, PublicKeyToken=af9ec4594d0014e9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>S:\Lib\ReconciliationLib.dll\1.2.4.1\1.2.4.4\ReconciliationLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GHVCsvReader.cs" />
+    <Compile Include="GHVHugoColumnNotFoundException.cs" />
+    <Compile Include="GHVHugoCommandNotFoundException.cs" />
+    <Compile Include="GHVHugoDataException.cs" />
+    <Compile Include="GHVHugoException.cs" />
+    <Compile Include="GHVHugoNotInitializedException.cs" />
+    <Compile Include="GHVHugoTradeException.cs" />
+    <Compile Include="HugoDataSet.cs">
+      <DependentUpon>HugoDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HugoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HugoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IGHVStockTrade.cs" />
+    <Compile Include="IImportableTradeMedium.cs" />
+    <Compile Include="InstrumentType.cs" />
+    <Compile Include="ITaxlotId.cs" />
+    <Compile Include="ITradeId.cs" />
+    <Compile Include="IUnrealizedGains.cs" />
+    <Compile Include="IRealizedGains.cs" />
+    <Compile Include="ITaxLot.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="StockTrade.cs" />
+    <Compile Include="StockTradeCollection.cs" />
+    <Compile Include="SubtotalGroup.cs" />
+    <Compile Include="TablesUpdatedEventArgs.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Gargoyle.snk" />
+    <None Include="HugoDataSet.xsc">
+      <DependentUpon>HugoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HugoDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HugoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HugoDataSet.xss">
+      <DependentUpon>HugoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

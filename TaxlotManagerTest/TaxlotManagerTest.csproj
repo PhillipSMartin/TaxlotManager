@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2400235C-05DD-4FAD-9D73-9BFF63546C9F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TaxlotManagerTest</RootNamespace>
+    <AssemblyName>TaxlotManagerTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Activ.ContentGatewayApi">
+      <HintPath>S:\Lib\Activ.ContentGatewayApi.dll\1.12.0.5\1.12.0.5\Activ.ContentGatewayApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Activ.Middleware">
+      <HintPath>S:\Lib\Activ.Middleware.dll\1.12.0.5\1.12.0.5\Activ.Middleware.dll</HintPath>
+    </Reference>
+    <Reference Include="CarlosAg.ExcelXmlWriter">
+      <HintPath>S:\Lib\CarlosAg.ExcelXmlWriter.dll\1.0.0.6\1.0.0.6\CarlosAg.ExcelXmlWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="DataGridViewAutoFilter">
+      <HintPath>S:\Lib\DataGridViewAutoFilter.dll\1.0.0.0\2.0.0.4\DataGridViewAutoFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Configuration">
+      <HintPath>S:\Lib\Gargoyle.Configuration.dll\2.0.0.0\2.0.0.0\Gargoyle.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Middleware.DBComponents2Lib">
+      <HintPath>S:\Lib\Gargoyle.Middleware.DBComponents2Lib.dll\2.1.0.0\1.0.0.3\Gargoyle.Middleware.DBComponents2Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Middleware.DBComponentsLib">
+      <HintPath>S:\Lib\Gargoyle.Middleware.DBComponentsLib.dll\2.1.0.0\2.1.0.1\Gargoyle.Middleware.DBComponentsLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Types.Common">
+      <HintPath>S:\Lib\Gargoyle.Types.Common.dll\2.0.0.0\9.0.0.1\Gargoyle.Types.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Utils.DataGridViewPrinterLib">
+      <HintPath>S:\Lib\Gargoyle.Utils.DataGridViewPrinterLib.dll\1.0.0.1\1.0.0.1\Gargoyle.Utils.DataGridViewPrinterLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Utils.DBAccess">
+      <HintPath>S:\Lib\Gargoyle.Utils.DBAccess.dll\2.0.0.0\1.0.0.7\Gargoyle.Utils.DBAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Utils.DBAccess.Contexts">
+      <HintPath>S:\Lib\Gargoyle.Utils.DBAccess.Contexts.dll\1.1.0.0\1.0.0.5\Gargoyle.Utils.DBAccess.Contexts.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Utils.Mappings">
+      <HintPath>S:\Lib\Gargoyle.Utils.Mappings.dll\1.0.0.0\1.0.0.5\Gargoyle.Utils.Mappings.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Utils.MatrixLib">
+      <HintPath>S:\Lib\Gargoyle.Utils.MatrixLib.dll\1.1.0.0\1.0.0.2\Gargoyle.Utils.MatrixLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Utils.PrecisionTiming">
+      <HintPath>S:\Lib\Gargoyle.Utils.PrecisionTiming.dll\1.0.0.1\1.0.4\Gargoyle.Utils.PrecisionTiming.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Utils.RegressionLib">
+      <HintPath>S:\Lib\Gargoyle.Utils.RegressionLib.dll\1.0.0.1\1.0.0.0\Gargoyle.Utils.RegressionLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>S:\Lib\log4net.dll\1.2.10.0\1.2.10.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="LoggingUtilitiesLib">
+      <HintPath>S:\Lib\LoggingUtilitiesLib.dll\1.0.0.0\1.0.0.2\LoggingUtilitiesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LumenWorks.Framework.IO">
+      <HintPath>S:\Lib\LumenWorks.Framework.IO.dll\3.0.0.0\3.0.0.1\LumenWorks.Framework.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.TeamSystem.Data.UnitTesting, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="QuoteFeedPerformanceMonitor">
+      <HintPath>S:\Lib\QuoteFeedPerformanceMonitor.dll\2.0.0.0\1.0.0\QuoteFeedPerformanceMonitor.dll</HintPath>
+    </Reference>
+    <Reference Include="ReconciliationLib">
+      <HintPath>S:\Lib\ReconciliationLib.dll\1.2.4.1\1.2.4.4\ReconciliationLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SmtpEmailer">
+      <HintPath>S:\Lib\SmtpEmailer.dll\1.0.0.0\1.0.0.1\SmtpEmailer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AuthoringTests.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TaxlotManager\TaxlotManager.csproj">
+      <Project>{97DAD64E-1BA4-4D21-85C1-7017FBA8600E}</Project>
+      <Name>TaxlotManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97DAD64E-1BA4-4D21-85C1-7017FBA8600E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TaxlotManager</RootNamespace>
+    <AssemblyName>TaxlotManager</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>S:\Software\Gargoyle\TaxlotManager\Production\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\gargoyle-fs3\GargoyleDataFiles\Software\Gargoyle\TaxlotManager\Production\</InstallUrl>
+    <PublisherName>Gargoyle Strategic Investments</PublisherName>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>2.0.2.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D5E026B6CD5D92B2E61DE41804197E6E026609CF</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TaxlotManager_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Activ.ContentGatewayApi">
+      <HintPath>S:\Lib\Activ.ContentGatewayApi.dll\1.12.0.5\1.12.0.5\Activ.ContentGatewayApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Activ.Middleware">
+      <HintPath>S:\Lib\Activ.Middleware.dll\1.12.0.5\1.12.0.5\Activ.Middleware.dll</HintPath>
+    </Reference>
+    <Reference Include="CarlosAg.ExcelXmlWriter">
+      <HintPath>S:\Lib\CarlosAg.ExcelXmlWriter.dll\1.0.0.6\1.0.0.6\CarlosAg.ExcelXmlWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="DataGridViewAutoFilter">
+      <HintPath>S:\Lib\DataGridViewAutoFilter.dll\1.0.0.0\2.0.0.4\DataGridViewAutoFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=af9ec4594d0014e9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>S:\Lib\Gargoyle.Configuration.dll\2.0.0.0\2.0.0.0\Gargoyle.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Middleware.DBComponents2Lib">
+      <HintPath>S:\Lib\Gargoyle.Middleware.DBComponents2Lib.dll\2.1.0.0\1.0.0.3\Gargoyle.Middleware.DBComponents2Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Middleware.DBComponentsLib">
+      <HintPath>S:\Lib\Gargoyle.Middleware.DBComponentsLib.dll\2.1.0.0\2.1.0.1\Gargoyle.Middleware.DBComponentsLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Types.Common, Version=2.0.0.0, Culture=neutral, PublicKeyToken=af9ec4594d0014e9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>S:\Lib\Gargoyle.Types.Common.dll\2.0.0.0\9.0.0.1\Gargoyle.Types.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Utils.DataGridViewPrinterLib">
+      <HintPath>S:\Lib\Gargoyle.Utils.DataGridViewPrinterLib.dll\1.0.0.1\1.0.0.1\Gargoyle.Utils.DataGridViewPrinterLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Utils.DBAccess">
+      <HintPath>S:\Lib\Gargoyle.Utils.DBAccess.dll\2.0.0.0\1.0.0.7\Gargoyle.Utils.DBAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Utils.DBAccess.Contexts">
+      <HintPath>S:\Lib\Gargoyle.Utils.DBAccess.Contexts.dll\1.1.0.0\1.0.0.5\Gargoyle.Utils.DBAccess.Contexts.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Utils.Mappings">
+      <HintPath>S:\Lib\Gargoyle.Utils.Mappings.dll\1.0.0.0\1.0.0.5\Gargoyle.Utils.Mappings.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Utils.MatrixLib">
+      <HintPath>S:\Lib\Gargoyle.Utils.MatrixLib.dll\1.1.0.0\1.0.0.2\Gargoyle.Utils.MatrixLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Utils.PrecisionTiming">
+      <HintPath>S:\Lib\Gargoyle.Utils.PrecisionTiming.dll\1.0.0.1\1.0.4\Gargoyle.Utils.PrecisionTiming.dll</HintPath>
+    </Reference>
+    <Reference Include="Gargoyle.Utils.RegressionLib">
+      <HintPath>S:\Lib\Gargoyle.Utils.RegressionLib.dll\1.0.0.1\1.0.0.0\Gargoyle.Utils.RegressionLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>S:\Lib\log4net.dll\1.2.10.0\1.2.10.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="LoggingUtilitiesLib">
+      <HintPath>S:\Lib\LoggingUtilitiesLib.dll\1.0.0.0\1.0.0.2\LoggingUtilitiesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LumenWorks.Framework.IO">
+      <HintPath>S:\Lib\LumenWorks.Framework.IO.dll\3.0.0.0\3.0.0.1\LumenWorks.Framework.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TeamSystem.Data.UnitTesting, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="QuoteFeedPerformanceMonitor">
+      <HintPath>S:\Lib\QuoteFeedPerformanceMonitor.dll\2.0.0.0\1.0.0\QuoteFeedPerformanceMonitor.dll</HintPath>
+    </Reference>
+    <Reference Include="ReconciliationLib">
+      <HintPath>S:\Lib\ReconciliationLib.dll\1.2.4.1\1.2.4.4\ReconciliationLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SmtpEmailer">
+      <HintPath>S:\Lib\SmtpEmailer.dll\1.0.0.0\1.0.0.1\SmtpEmailer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdjustmentCriterion.cs" />
+    <Compile Include="DataGridStateManager.cs" />
+    <Compile Include="DataGridStateManagerForOpenTaxlots.cs" />
+    <Compile Include="DataGridStateManagerForRealizedPandL.cs" />
+    <Compile Include="DataGridStateManagerForTaxlotHistory.cs" />
+    <Compile Include="DataGridStateManagerForTaxlotSummary.cs" />
+    <Compile Include="DataGridStateManagerForUnrealizedPandL.cs" />
+    <Compile Include="ExcelWorkbookGenerator.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdjustCostBasis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdjustCostBasis.Designer.cs">
+      <DependentUpon>FormAdjustCostBasis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdjustSpinoff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdjustSpinoff.Designer.cs">
+      <DependentUpon>FormAdjustSpinoff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSendOpenTaxlotsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSendReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSendReport.Designer.cs">
+      <DependentUpon>FormSendReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSettings.Designer.cs">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenTaxlotsReportSender.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSendReport.resx">
+      <DependentUpon>FormSendReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <Content Include="lbm.default.conf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\DataSources\GHVHugoLib.HugoDataSet+p_generate_stock_daily_returns_reportDataTable.datasource" />
+    <None Include="Properties\DataSources\GHVHugoLib.HugoDataSet+p_generate_stock_monthly_returns_reportDataTable.datasource" />
+    <None Include="Properties\DataSources\GHVHugoLib.HugoDataSet+p_get_open_taxlotsDataTable.datasource" />
+    <None Include="Properties\DataSources\GHVHugoLib.HugoDataSet+RealizedFuturesGainsDataTable.datasource" />
+    <None Include="Properties\DataSources\GHVHugoLib.HugoDataSet+TaxlotSummaryReportDataTable.datasource" />
+    <None Include="Properties\DataSources\GHVHugoLib.HugoDataSet+UnrealizedEquityOptionGainsDataTable.datasource" />
+    <None Include="Properties\DataSources\GHVHugoLib.HugoDataSet+UnrealizedFuturesGainsDataTable.datasource" />
+    <None Include="Properties\DataSources\GHVHugoLib.HugoDataSet+UnrealizedIndexOptionGainsDataTable.datasource" />
+    <None Include="Properties\DataSources\GHVHugoLib.HugoDataSet+p_get_stock_tradesDataTable.datasource" />
+    <None Include="Properties\DataSources\GHVHugoLib.HugoDataSet+p_get_taxlots_with_running_positions_and_unit_cost_basisDataTable.datasource" />
+    <None Include="Properties\DataSources\GHVHugoLib.HugoDataSet+RealizedEquityOptionGainsDataTable.datasource" />
+    <None Include="Properties\DataSources\GHVHugoLib.HugoDataSet+RealizedIndexOptionGainsDataTable.datasource" />
+    <None Include="Properties\DataSources\GHVHugoLib.HugoDataSet+RealizedStockGainsDataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RefreshBindingSourceEventArgs.cs" />
+    <Compile Include="ReportSender.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Utilities.cs" />
+    <None Include="TaxlotManager_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdjustCostBasis.resx">
+      <DependentUpon>FormAdjustCostBasis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdjustSpinoff.resx">
+      <DependentUpon>FormAdjustSpinoff.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSettings.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="lbm.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="msvcr71.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GHVHugoLib\GHVHugoLib.csproj">
+      <Project>{9a16b90a-6552-49fb-b2bb-714a9e458359}</Project>
+      <Name>GHVHugoLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

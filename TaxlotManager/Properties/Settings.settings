@@ -1,0 +1,57 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TaxlotManager.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TraderName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ApplicationName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TaxlotManager</Value>
+    </Setting>
+    <Setting Name="Database" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Hugo</Value>
+    </Setting>
+    <Setting Name="MailFrom" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MailOpenTaxlotsTo" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MailOpenTaxlotsSubject" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Opening taxlots</Value>
+    </Setting>
+    <Setting Name="UpgradeSettings" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DebugMode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="QuoteFeedServerType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Activ</Value>
+    </Setting>
+    <Setting Name="AccountName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SubAccountName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SMTPConfigurationModule" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Gargoyle.SMTPServerSettings</Value>
+    </Setting>
+    <Setting Name="MailOpenDiscrepanciesTo" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MailOpenDiscrepanciesSubject" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Discrepancies in open taxlots</Value>
+    </Setting>
+    <Setting Name="MailClosedDiscrepanciesTo" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MailClosedDiscrepanciesSubject" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Discrepancies in closed taxlots</Value>
+    </Setting>
+    <Setting Name="ReportsDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\\temp</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
